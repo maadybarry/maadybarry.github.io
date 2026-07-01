@@ -383,22 +383,6 @@ section.contact {
     color: var(--text-primary);
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-    .fortune-content {
-        padding: 28px 20px 24px;
-    }
-
-    .cookie-half {
-        width: 40px;
-        height: 48px;
-    }
-
-    #fortuneText {
-        font-size: 0.95rem;
-    }
-}
-
 /* ===== FOOTER ===== */
 .footer {
     margin-top: 0.8rem;
@@ -416,9 +400,9 @@ section.contact {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body {
-        padding: 28px 16px;
+        padding: 32px 20px;
     }
 
     h1 {
@@ -426,11 +410,175 @@ section.contact {
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p,
+    li,
+    .bio {
+        font-size: 0.95rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .status-line {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 14px;
+    }
+
+    .social-links a,
+    .social-links .fortune-btn {
+        font-size: 1.1rem;
+        width: 28px;
+        height: 28px;
+    }
+
+    section {
+        margin-bottom: 2.4rem;
+        padding-bottom: 1.6rem;
+    }
+
+    section.contact {
+        margin-bottom: 0.6rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .exp-item {
+        margin-bottom: 1.4rem;
+    }
+
+    .exp-item ul li {
+        font-size: 0.9rem;
+    }
+
+    .project-item {
+        margin-bottom: 1.4rem;
+    }
+
+    .project-item p {
+        font-size: 0.9rem;
+    }
+
+    .contact-links {
+        gap: 16px;
+    }
+
+    .contact-links a {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        margin-top: 0.8rem;
+        padding-top: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    /* Fortune modal */
+    .fortune-content {
+        padding: 28px 20px 24px;
+    }
+
+    .cookie-half {
+        width: 40px;
+        height: 48px;
+    }
+
+    #fortuneText {
+        font-size: 0.95rem;
+    }
+
+    .fortune-close {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+    }
+
+    p,
+    li,
+    .bio {
+        font-size: 0.9rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    .status-line {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a,
+    .social-links .fortune-btn {
+        font-size: 1rem;
+        width: 26px;
+        height: 26px;
+    }
+
+    section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .exp-item ul li {
+        font-size: 0.85rem;
+    }
+
+    .project-item p {
+        font-size: 0.85rem;
     }
 
     .contact-links {
         flex-direction: column;
         gap: 12px;
+    }
+
+    .contact-links a {
+        font-size: 0.9rem;
+    }
+
+    /* Fortune modal */
+    .fortune-content {
+        padding: 24px 16px 20px;
+    }
+
+    .cookie-half {
+        width: 34px;
+        height: 40px;
+    }
+
+    #fortuneText {
+        font-size: 0.9rem;
     }
 }
