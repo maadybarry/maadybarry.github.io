@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="24" fill="#f7f2eb" />
-  <text x="50" y="50" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="44" fill="#1a365d" text-anchor="middle" dominant-baseline="central">BM</text>
+  <!-- Background (cream) -->
+  <rect width="100" height="100" rx="24" fill="#faf8f5" />
+
+  <!-- Helmet silhouette (simplified F1 style) -->
+  <path d="M50 10 C70 10 85 25 85 45 C85 65 72 80 50 80 C28 80 15 65 15 45 C15 25 30 10 50 10 Z" fill="#2d2a28" />
+
+  <!-- Visor (clean curved cut) -->
+  <path d="M25 40 C30 30 40 25 50 25 C60 25 70 30 75 40 C78 45 76 52 70 56 C64 60 57 62 50 62 C43 62 36 60 30 56 C24 52 22 45 25 40 Z" fill="#faf8f5" />
+
+  <!-- Visor tint (subtle) -->
+  <path d="M28 42 C32 34 41 29 50 29 C59 29 68 34 72 42 C74 46 72 52 67 55 C63 57 57 59 50 59 C43 59 37 57 33 55 C28 52 26 46 28 42 Z" fill="#5a5a5a" opacity="0.25" />
 </svg>
