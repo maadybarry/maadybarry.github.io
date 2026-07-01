@@ -117,9 +117,8 @@ a:hover {
 
 /* ===== HEADER ===== */
 .header {
-    margin-bottom: 3.2rem;
-    padding-bottom: 2.4rem;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
 }
 
 .social-links {
@@ -141,13 +140,13 @@ a:hover {
 
 /* ===== SECTIONS ===== */
 section {
-    margin-bottom: 3.2rem;
-    padding-bottom: 2.4rem;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
 }
 
 section:last-of-type {
-    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* ===== EXPERIENCE ===== */
@@ -228,9 +227,8 @@ section:last-of-type {
 
 /* Tighten spacing to footer */
 section.contact {
-    margin-bottom: 0.8rem;
+    margin-bottom: 2rem;
     padding-bottom: 1.2rem;
-    border-bottom: none;
 }
 
 /* ===== FORTUNE COOKIE ===== */
