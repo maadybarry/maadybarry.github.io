@@ -88,6 +88,21 @@ li,
     max-width: 580px;
 }
 
+/* ===== STATUS LINE ===== */
+.status-line {
+    margin: 0.8rem 0 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-style: italic;
+    min-height: 1.5rem;
+    transition: opacity 0.5s ease;
+}
+
+#statusText {
+    transition: opacity 0.4s ease;
+}
+
 a {
     font-family: 'Inter', sans-serif;
     color: var(--text-secondary);

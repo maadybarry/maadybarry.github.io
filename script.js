@@ -1,19 +1,30 @@
-// ===== FUN SURPRISE =====
-const surprises = [
-    "I once built a chatbot that told dad jokes – it was a hit with the engineering team.",
-    "I can type with 10 fingers but still can't cook an egg without burning it.",
-    "My first 'hello world' was written in BASIC on a 20-year-old computer.",
-    "I believe the best debugging tool is a good night's sleep.",
-    "I've read more research papers in the last year than novels – and I'm okay with that.",
-    "My favourite way to unwind is a long walk and a good podcast.",
-    "I'm secretly a coffee connoisseur – I can tell the origin of most beans by taste.",
+// ===== ROTATING STATUS =====
+const statusMessages = [
+    "⚡ Building autonomous agents and sipping coffee.",
+    "🚀 Shipping code, one commit at a time.",
+    "🧠 Thinking about AI and automation.",
+    "🌱 Learning something new every day.",
+    "☕ Fueled by coffee and curiosity.",
+    "🔍 Exploring the next frontier of AI."
 ];
 
-const btn = document.getElementById('funBtn');
-const display = document.getElementById('funDisplay');
+const statusElement = document.getElementById('statusText');
+let index = 0;
 
-btn.addEventListener('click', () => {
-    const random = surprises[Math.floor(Math.random() * surprises.length)];
-    display.textContent = random;
-    display.classList.add('show');
-});
+function rotateStatus() {
+    // Fade out
+    statusElement.style.opacity = 0;
+    setTimeout(() => {
+        // Change text
+        index = (index + 1) % statusMessages.length;
+        statusElement.textContent = statusMessages[index];
+        // Fade in
+        statusElement.style.opacity = 1;
+    }, 400);
+}
+
+// Start rotating every 5 seconds
+setInterval(rotateStatus, 5000);
+
+// Set initial opacity to 1
+statusElement.style.opacity = 1;
