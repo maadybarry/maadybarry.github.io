@@ -179,11 +179,13 @@ section:last-of-type {
 }
 
 .exp-item ul li::before {
-    content: '—';
+    content: '◆';
     position: absolute;
     left: 0;
     color: var(--text-muted);
     font-weight: 300;
+    font-size: 0.7rem;
+    top: 2px;
 }
 
 /* ===== PROJECTS ===== */
