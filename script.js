@@ -1,11 +1,11 @@
 // ===== ROTATING STATUS =====
 const statusMessages = [
-    "⚡ Building autonomous agents and sipping coffee.",
-    "🚀 Shipping code, one commit at a time.",
-    "🧠 Thinking about AI and automation.",
-    "🌱 Learning something new every day.",
-    "☕ Fueled by coffee and curiosity.",
-    "🔍 Exploring the next frontier of AI."
+    "Building autonomous agents and sipping coffee.",
+    "Shipping code, one commit at a time.",
+    "Thinking about AI and automation.",
+    "Learning something new every day.",
+    "Fueled by coffee and curiosity.",
+    "Exploring the next frontier of AI."
 ];
 
 const statusElement = document.getElementById('statusText');
