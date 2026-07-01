@@ -77,36 +77,3 @@ document.addEventListener('keydown', (e) => {
         closeFortune();
     }
 });
-
-// ===== CUSTOM CURSOR =====
-(function () {
-    // Create cursor elements
-    const cursorDot = document.createElement('div');
-    cursorDot.classList.add('cursor-dot');
-    document.body.appendChild(cursorDot);
-
-    const cursorRing = document.createElement('div');
-    cursorRing.classList.add('cursor-ring');
-    document.body.appendChild(cursorRing);
-
-    console.log('Cursor elements created');
-
-    // Position update
-    document.addEventListener('mousemove', (e) => {
-        cursorDot.style.left = e.clientX + 'px';
-        cursorDot.style.top = e.clientY + 'px';
-        cursorRing.style.left = e.clientX + 'px';
-        cursorRing.style.top = e.clientY + 'px';
-    });
-
-    // Shrink on hover
-    const clickables = document.querySelectorAll('a, button, .fortune-btn, .social-links a, .resume-btn');
-    clickables.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursorRing.classList.add('shrink');
-        });
-        el.addEventListener('mouseleave', () => {
-            cursorRing.classList.remove('shrink');
-        });
-    });
-})();
