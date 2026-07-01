@@ -12,21 +12,15 @@ const statusElement = document.getElementById('statusText');
 let index = 0;
 
 function rotateStatus() {
-    // Fade out
     statusElement.style.opacity = 0;
     setTimeout(() => {
-        // Change text
         index = (index + 1) % statusMessages.length;
         statusElement.textContent = statusMessages[index];
-        // Fade in
         statusElement.style.opacity = 1;
     }, 400);
 }
 
-// Start rotating every 5 seconds
 setInterval(rotateStatus, 5000);
-
-// Set initial opacity to 1
 statusElement.style.opacity = 1;
 
 // ===== FORTUNE COOKIE =====
@@ -82,4 +76,31 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && fortuneModal.classList.contains('active')) {
         closeFortune();
     }
+});
+
+// ===== CUSTOM CURSOR =====
+const cursorDot = document.createElement('div');
+cursorDot.classList.add('cursor-dot');
+document.body.appendChild(cursorDot);
+
+const cursorRing = document.createElement('div');
+cursorRing.classList.add('cursor-ring');
+document.body.appendChild(cursorRing);
+
+document.addEventListener('mousemove', (e) => {
+    cursorDot.style.left = e.clientX + 'px';
+    cursorDot.style.top = e.clientY + 'px';
+    cursorRing.style.left = e.clientX + 'px';
+    cursorRing.style.top = e.clientY + 'px';
+});
+
+const clickables = document.querySelectorAll('a, button, .fortune-btn, .social-links a, .resume-btn');
+
+clickables.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursorRing.classList.add('shrink');
+    });
+    el.addEventListener('mouseleave', () => {
+        cursorRing.classList.remove('shrink');
+    });
 });
