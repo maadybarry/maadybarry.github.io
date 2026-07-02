@@ -9,9 +9,9 @@
 
 :root {
     --bg: #f5f0ea;
-    --text-primary: #6b6058;
-    --text-secondary: #8a7e74;
-    --text-muted: #b5a89c;
+    --text-primary: #5c534a;
+    --text-secondary: #7a6e64;
+    --text-muted: #a09488;
     --border: #e0d6cc;
     --white: #ffffff;
     --max-width: 720px;
@@ -48,7 +48,7 @@ h1 {
     font-size: 1.6rem;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    color: #8a7e74;
+    color: #7a6e64;
 }
 
 h2 {
@@ -57,7 +57,7 @@ h2 {
     font-size: 1.5rem;
     letter-spacing: -0.01em;
     margin-bottom: 1rem;
-    color: #8a7e74;
+    color: #7a6e64;
 }
 
 h3 {
@@ -249,7 +249,7 @@ section:last-of-type {
     font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-weight: 600;
     font-size: 1rem;
-    color: #9a8e84;
+    color: #8a7e74;
 }
 
 .edu-meta {
@@ -276,7 +276,7 @@ section:last-of-type {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
-    color: #9a8e84;
+    color: #8a7e74;
 }
 
 .cert-issuer {
