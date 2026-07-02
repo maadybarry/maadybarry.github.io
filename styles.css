@@ -64,7 +64,7 @@ h3 {
     font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-weight: 600;
     font-size: 1.15rem;
-    color: #9a8e84;
+    color: #8a7e74;
 }
 
 p,
@@ -249,7 +249,7 @@ section:last-of-type {
     font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-weight: 600;
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: #9a8e84;
 }
 
 .edu-meta {
@@ -276,7 +276,7 @@ section:last-of-type {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: #9a8e84;
 }
 
 .cert-issuer {
@@ -304,11 +304,13 @@ section:last-of-type {
 .project-item a {
     font-weight: 500;
     font-size: 0.9rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
+    transition: color 0.2s, opacity 0.2s;
 }
 
 .project-item a:hover {
-    opacity: 0.5;
+    color: var(--text-primary);
+    opacity: 1;
 }
 
 /* ===== CONTACT ===== */
