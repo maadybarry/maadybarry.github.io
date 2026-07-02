@@ -144,6 +144,15 @@ a:hover {
 }
 
 /* ===== WATCH EMOJI FIX ===== */
+.watch-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
 .watch-link .watch-emoji {
     display: flex;
     align-items: center;
@@ -155,12 +164,22 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    .watch-link {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
     .watch-link .watch-emoji {
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
+    .watch-link {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
     .watch-link .watch-emoji {
         font-size: 1rem;
     }
