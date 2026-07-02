@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Watch Collection · Barathwaj Maadhavan</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+
+        <!-- ===== MAIN CONTAINER (same as home) ===== -->
+        <main class="container">
+
+            <!-- ===== HEADER (same as home, but without bio & status) ===== -->
+            <header class="header" style="margin-bottom: 2rem;">
+                <h1>Barathwaj Maadhavan</h1>
+                <p class="tagline">Builder &amp; Watch Collector</p>
+            </header>
+
+            <!-- ===== BACK BUTTON ===== -->
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to home
+            </a>
+
+            <!-- ===== WATCH COLLECTION ===== -->
+            <section class="watch-collection">
+                <h2>My Watch Collection</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">A small but growing collection – each one with
+                    a story.</p>
+
+                <!-- Watch 1 -->
+                <div class="watch-item">
+                    <img src="assets/images/watch1.jpg" alt="Watch 1" class="watch-image" />
+                    <div class="watch-description">
+                        <strong>Rolex Submariner (No-Date)</strong> – My first luxury watch, a daily driver.
+                        Understated, robust, and timeless.
+                    </div>
+                </div>
+
+                <!-- Watch 2 -->
+                <div class="watch-item">
+                    <img src="assets/images/watch2.jpg" alt="Watch 2" class="watch-image" />
+                    <div class="watch-description">
+                        <strong>Omega Speedmaster Professional</strong> – The Moonwatch. A testament to human
+                        achievement – and it looks great on a strap.
+                    </div>
+                </div>
+
+                <!-- Watch 3 -->
+                <div class="watch-item">
+                    <img src="assets/images/watch3.jpg" alt="Watch 3" class="watch-image" />
+                    <div class="watch-description">
+                        <strong>Grand Seiko SBGA211 (Snowflake)</strong> – The dial is a work of art, and the Spring
+                        Drive is mesmerising. A true conversation starter.
+                    </div>
+                </div>
+
+                <!-- Add more watches as needed -->
+            </section>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer" style="margin-top: 3rem;">
+                <p>&copy; 2026 Barathwaj Maadhavan</p>
+            </footer>
+
+        </main>
+
+        <!-- Custom page-specific styles (keep them light and only for watch items) -->
+        <style>
+            .watch-item {
+                margin-bottom: 2.4rem;
+            }
+
+            .watch-image {
+                width: 100%;
+                max-width: 600px;
+                border-radius: 12px;
+                border: 1px solid var(--border);
+                margin-bottom: 0.8rem;
+            }
+
+            .watch-description {
+                font-size: 1rem;
+                color: var(--text-secondary);
+                line-height: 1.7;
+            }
+
+            .back-button {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-family: 'Inter', sans-serif;
+                font-size: 0.9rem;
+                color: var(--text-muted);
+                text-decoration: none;
+                margin-bottom: 1.2rem;
+                transition: color 0.2s;
+            }
+
+            .back-button:hover {
+                color: var(--text-primary);
+            }
+        </style>
+
+    </body>
+
+</html>
